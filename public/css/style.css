@@ -1,0 +1,48 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	background: #D1D3D4;
+}
+
+.main {
+	width: 100%;
+	height: 100%;
+}
+
+.main .container {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.main .content-w {
+	position: relative;
+	top: 100px;
+}
+
+.main .content-w h1 {
+	font-size: 45px;
+	color: #555;
+}
+
+.main .content-w p {
+	font-size: 18px;
+	color: #333;
+	font-family: tahoma;
+	font-weight: bold;
+}
+
+.main .content-w h1 span {
+	color: #72BF44;
+}
+
+.main .container .content-w .img-w {
+	width: 100%;
+}
+
+.main .container .content-w .img-w img {
+	width: 100%;
+	height: 100%;
+}
