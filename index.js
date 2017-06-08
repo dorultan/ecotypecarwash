@@ -2,22 +2,23 @@
 var express = require('express');
 //call express
 var app = express();
+
 const nodemailer = require('nodemailer');
 
 let transporter = nodemailer.createTransport({
-	host: 'ecotypecarwash.herokuapp.com',
+	service: 'outlook',
 	port: 465,
-	secure: true,
+	secure: false,
 	auth: {
-		user: 'robert@ecotypecarwash.com',
-		pass: 'robertloza93'
+		user: 'dorultanianosgyorgy@outlook.com',
+		pass: 'garoafa8117'
 	}
 })
 
 
 let mailOptions = {
-	from: '"dorultan <dorultanianosgyorgy.com"',
-	to: 'robert@ecotypecarwash.com',
+	from: '"dorultan <dorultanianosgyorgy@outlook.com>"',
+	to: 'robert@ecotypecarwash.co.uk',
 	subject: 'hello world ? ',
 	html: '<b>Hello cool world</b>'
 }
@@ -25,7 +26,7 @@ let mailOptions = {
 transporter.sendMail(mailOptions, (error, info) => {
 	if(error) {
 		return console.log(error);
-	}
+}
 
 	console.log('Message is sent successful', info.messageId, info.response);
 })
