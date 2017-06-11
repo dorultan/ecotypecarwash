@@ -1,17 +1,22 @@
 //import module
 var express = require('express');
+const xoauth2 = require('xoauth2');
 //call express
 var app = express();
 
 const nodemailer = require('nodemailer');
 
 let transporter = nodemailer.createTransport({
-	service: 'outlook',
+	service: 'gmail',
 	port: 465,
 	secure: false,
 	auth: {
-		user: 'dorultanianosgyorgy@outlook.com',
-		pass: 'garoafa8117'
+		xoauth2: xoauth2.createXOAuth2Generator({
+			user: 'robert@ecotypecarwash.co.uk',
+			clientId: '437386387737-pa69h1r7m1i6d04o8m4056a68g8s6em7.apps.googleusercontent.com'
+			clientSecret: 'vm6Xw-Spw4mIeb3t9HjJFnXI',
+			refreshToken: ''
+		})
 	}
 })
 
