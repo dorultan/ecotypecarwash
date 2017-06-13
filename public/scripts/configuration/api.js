@@ -1,0 +1,1 @@
+var ecoType = angular.module('ecoType', ['ngRoute', 'ngMessages']);

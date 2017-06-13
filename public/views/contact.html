@@ -1,0 +1,72 @@
+<header class="header-contact">
+ <div class="container">
+  <div class="content-w">
+   <div class="title-w">
+    <h1>Contact Us</h1>
+   </div>
+   <div class="content">
+   <p>We are able to answer to your mail imediately</p>
+   </div>
+  </div>
+ </div>
+</header>
+<section class="section-contact">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-6">
+    <div class="subtitle-w">
+     <h3>Complete the form below.</h3>
+    </div>
+   	<form class="contact-form" name="contactForm">
+   	 <div class="inp-w">
+   	  <p><i class="fa fa-envelope-o fa-1x"></i></p>
+   	  <input type="text" name="email" placeholder="e.g: youremail@domain.com" id="email" ng-model="email" minlength="5" required="">
+   	  <div ng-messages="contactForm.email.$error" rolle="alert" ng-if="!email.length" class="req_message">
+   	  <div ng-message="required">
+   	  	*
+   	  </div>
+   	 </div>
+   	 </div>
+   	 
+   	 <div class="inp-w">
+   	  <p><i class="fa fa-tasks fa-1x"></i></p>
+   	  <select name="select">
+   	  	<option>Select a subject</option>
+   	  	<option>Feedback</option>
+   	  	<option>Pricing</option>
+   	  	<option>Option</option>
+   	  	<option>other</option>
+   	  </select>
+   	  <div ng-messages="contactForm.email.$error" rolle="alert"  class="req_message">
+   	  <div ng-message="required" ng-if="!email.length">
+   	  	*
+   	  </div>
+   	 </div>
+   	 </div>
+   	 <div class="inp-w">
+   	  <p><i class="fa fa-commenting-o fa-1x"></i></p>
+   	  <textarea name="message" placeholder="Enter your message"></textarea>
+   	 </div>
+   	 <button type="submit">Send <i class="fa fa-send-o"></i></button>
+   	</form>
+   	<hr />
+   	<div class="subtitle-w">
+   	 <h3>Or</h3>
+   	</div>
+   	<div class="otherwise-contact">
+   	 <p>Get in touch by:</p>
+   	</div>
+   	<ul>
+   	 <li><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
+   	 <li><i class="fa fa-twitter"></i></li>
+   	 <li><i class="fa fa-pinterest"></i></li>
+   	</ul>
+   </div>
+   <div class="col-md-6">
+   	<div class="img-w">
+   	 <img src="images/logo/map.png">
+   	</div>
+   </div>
+  </div>
+ </div>
+</section>

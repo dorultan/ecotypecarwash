@@ -1,28 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="ecoType">
 <head>
-	<title>Hello world</title>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="fonts/glyphicons-halflings-regular.svg">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/font-awesome-4.7.0/fonts/FontAwesome">
 </head>
 <body>
- <div class="wrapper">
-  <div class="main">
+<nav class="navbar">
   <div class="container">
-   <div class="content-w">
-    <div class="img-w">
-     <img src="images/ecotypecarwash.png">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="images/logo/ecotypecarwash.png"></a>
     </div>
-    <h1>We are Ecotypecarwash !</h1>
-    <p>Our website is going through big changes.</p>
-    <p>For bookings, contact us at:</span></p>
-    <ul class="list">
-      <li><span class="glyphicon glyphicon-envelope"></span> customer@ecotypecarwash.com</li>
-      <li><span class="glyphicon glyphicon-earphone"></span>07481290009</li>
-    </ul>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="#/about">About Us</a></li>
+        <li><a href="#/hire">Book now</a></li>
+        <li><a href="#/contact">Contact us</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-->
+</nav>
+<div ng-view="">
+ 
+</div>
+<footer class="footer">
+  <div class="container">
+   <div class="row">
+    <div class="col-md-5">
+     <ul>
+       <li><a href="#">About us</a></li>
+       <li><a href="#">Hire us</a></li>
+       <li><a href="#">Make your plan</a></li>
+       <li><a href="#">Contact us</a></li>
+     </ul>
+    </div>
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-5">
+     <div class="social">
+      <p>Find us on: </p>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+     </div>
+    </div>
    </div>
+   <div class="copyright">  
+     <p>©Copyright all rights reserved</p></div>
   </div>
- </div>
- </div>
+</footer>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.min.js"></script>
+<script src=https://code.angularjs.org/1.6.4/angular-messages.js></script>
+<script src="scripts/configuration/api.js"></script>
+
+
+<script src="scripts/controllers/home.js"></script>
+<script src="scripts/controllers/about.js"></script>
+<script src="scripts/controllers/contact.js"></script>
+<script src="scripts/controllers/hire.js"></script>
+
+<script type="text/javascript" src="scripts/configuration/routes.js"></script>
 </body>
 </html>
