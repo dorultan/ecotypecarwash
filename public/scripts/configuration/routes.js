@@ -12,7 +12,7 @@ ecoType.config(function($routeProvider){
    })
 
    .when('/hire', {
-   	templateUrl: 'views/hire.html',
+   	templateUrl: 'views/book.html',
    	controller: 'hireController'
    })
 
