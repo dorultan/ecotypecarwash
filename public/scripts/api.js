@@ -1,0 +1,1 @@
+var ecotypeCarwash = angular.module('ecotypeCarwash', ['ngRoute']);
