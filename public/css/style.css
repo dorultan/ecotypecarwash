@@ -8,7 +8,69 @@ body {
 	height: 100%;
 }
 
-.navbar-f {
+.navbar {
+ 	background: linear-gradient(0deg, #ffffff, #f1f1f1);
+ 	padding: 0;
+ 	margin: 0;
+ 	box-shadow: 0 0 2px 0 #999;
+ }
+
+.navbar .nav {
+	margin-top: 14px;
+	position: relative;
+	padding: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding: 0;
+}
+
+.navbar .nav li {
+	height: 100%;
+}
+
+.navbar .nav li:first-child {
+	height: 100%;
+}
+
+/*demo*/
+
+/*end*/
+.navbar .nav li a {
+	font-size: 18px;
+	padding: 30px 16px;
+	color: #222;
+}
+
+.navbar .nav li a:hover {
+	background: #7AB539;
+	color: #fff;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+}
+
+.navbar .nav li a:active {
+	background: #42B72A;
+	transition: all 1s;
+}
+
+.navbar .nav li a:focus {
+	background: #42B72A;
+	transition: all 1s;
+	color: #fff;
+}
+
+.navbar .navbar-header .navbar-brand {
+	height: auto;
+	padding: 0;
+}
+
+.navbar .navbar-header .navbar-brand img {
+	height: 80px;
+	margin: auto 0;
+	padding: 0 0 7px 0;
+}
+
+/*.navbar-f {
 	position: fixed;
 	z-index: 100;
 	width: 100%;
@@ -46,7 +108,7 @@ body {
 	font-size: 19px;
 	color: #555;
 	padding: 0 20px;
-}
+}*/
 
 /*end nav*/
 
@@ -57,8 +119,8 @@ body {
 	height: 450px;
 	background: url('../images/contact-us.jpg');
 	position: relative;
-	top: 106px;
 	background-size: cover;
+	margin-top: -19px;
 }
 
 .header .container .title-w {
@@ -109,7 +171,6 @@ body {
 	padding: 100px 0;
 	margin: 0;
 	position: relative;
-	top: 106px;
 }
 
 .main .container .title-w {
@@ -205,51 +266,51 @@ body {
 	font-size: 17px;
 }
 
-.main .container .subtitle-w h2 {
-	color: green;
+.main .container .title-w h1 {
+	color: #222;
 }
 
-.main .container .subtitle-w h2 i {
-	color: red;
+.main .container .title-w h1 i {
+	color: orange;
 }
-
-.main .container .row .col-md-6 .subtitle-w h2 {
-	color: #333;
-} 
 
 .main .container .row .col-md-6 .content-w p {
 	font-size: 18px;
 }
 
 
-.main .container .content p:last-child {
-	color: green;
+.main .container .content p {
+	color: #555;
 	font-size: 22px;
+}
+
+.main .container .content p span {
+	color: green;
+	font-weight: bold;
 }
 
 /*about page*/
 
 .header-about {
 	width: 100%;
-	height: 450px;
 	background: linear-gradient(147.9deg,  #39B54A, #4ED478);
 	position: relative;
-	top: 106px;
+	margin-top: -19px;
 }
 
-.header-about .container .content-w,
-.header-contact .container .content-w  {
+.header-about .container .content-w {
 	max-width: 400px;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	top: 130px;
+	top: 100px;
+	height: 450px;
 }
 
-.header-about .container .title-w,
-.header-contact .container .content-w .title-w {
+.header-about .container .title-w {
 	width: 100%;
 	text-align: center;
+	position: relative;
 }
 
 .header-about .container .title-w h1,
@@ -287,7 +348,6 @@ body {
 .about-section {
 	width: 100%;
 	position: relative;
-	top: 106px;
 }
 
 .about-section .container .title-w {
@@ -345,7 +405,6 @@ body {
 	padding: 0;
 	background: #47C968;
 	position: relative;
-	top: 106px;
 }
 
 
@@ -443,7 +502,6 @@ footer {
 	padding: 20px;
 	box-shadow: 0 0 4px 0 #3BA237;
 	background: #f1f1f1;
-	top: 106px;
 }
 
 

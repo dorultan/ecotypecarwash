@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html ng-app="ecotypeCarwash">
 <head>
-	<title>Demo</title>
+	<title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Eco wash" content="We exculde the water from car wash. Because of the products we use, we don't need to use water to clean the exterior of your automobile.">
+  <meta name="No water" content="We exculde the water from car wash. Because of the products we use, we don't need to use water to clean the exterior of your automobile.">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="images/ecotypecarwash.png" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<nav class="navbar-f">
- <div class="container">
-   <div class="row">
-    <div class="col-md-6">
-     <div class="logo-w">
-      <img src="images/ecotypecarwash.png" alt="Eco car wash">
-     </div>
+<nav class="navbar">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="fa fa-bars fa-3x"></span>
+      </button>
+      <a class="navbar-brand" href="#/"><img src="images/logo/ecotypecarwash.png"></a>
     </div>
-    <div class="col-md-6">
-     <div class="link">
-      <a href="#/">home</a>
-      <a href="#/about">About us</a>
-     </div>
-    </div>
-   </div>
- </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="#/about">About Us</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-->
 </nav>
 <div ng-view>
 
@@ -30,18 +36,18 @@
  <footer>
   <div class="container">
    <div class="row">
-   <div class="col-md-4">
+   <div class="col-xs-4">
     <ul>
-     <li><a href="#">Who we are?</a></li>
-     <li><a href="#">What we do ?</a></li>
-     <li><a href="#">No watter</a></li>
-     <li><a href="#">Save the watter</a></li>
+     <li><a href="#">Services</a></li>
+     <li><a href="#">Products</a></li>
+     <li><a href="#">Our team</a></li>
+     <li><a href="#">Ecology</a></li>
     </ul>
    </div>
-   <div class="col-md-4">
+   <div class="col-xs-4">
     
    </div>
-   <div class="col-md-4">
+   <div class="col-xs-4">
      <p>Catch us on:</p>
     <div class="social">
      <ul>
@@ -53,6 +59,11 @@
   </div>
   </div>
  </footer>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.min.js"></script>
 
