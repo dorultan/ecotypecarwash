@@ -162,6 +162,8 @@ body {
 
 .header .container .title-w h1 span {
 	color: green;
+	background: #fff;
+	padding: 5px;
 }
 /*endheader*/
 
@@ -188,10 +190,6 @@ body {
 	margin-right: auto;
 	margin-top: 50px;
 	margin-bottom: 50px;
-}
-
-.main .container .content p {
-	font-size: 18px;
 }
 
 .main .container .contact-w {
@@ -284,9 +282,31 @@ body {
 	font-size: 22px;
 }
 
+.main .container .content .subtitle-w {
+	width: 100%;
+	text-align: center;
+}
+
 .main .container .content p span {
 	color: green;
 	font-weight: bold;
+}
+
+.main .container .content h3 {
+	font-weight: bolder;
+	color: #555;
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main .container .content h3 span:first-child {
+	font-weight: bold;
+	color: orange;
+}
+
+.main .container .content h3 span:last-child {
+	color: red;
 }
 
 /*about page*/
