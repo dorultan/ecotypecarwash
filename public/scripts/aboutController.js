@@ -1,5 +1,6 @@
 ecotypeCarwash.controller('aboutController', ['$scope', '$location', '$anchorScroll', function($scope, $location, $anchorScroll){
 	$scope.name = 'dorultan';
+	console.log($location)
 	$scope.go = function($event) {
 		if($event.target.id === '_services') {
 			$location.hash('services');

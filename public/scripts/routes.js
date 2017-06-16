@@ -1,4 +1,4 @@
-ecotypeCarwash.config(function($routeProvider){
+ecotypeCarwash.config(function($routeProvider, $locationProvider){
 	$routeProvider
 
 	.when('/', {
@@ -6,12 +6,12 @@ ecotypeCarwash.config(function($routeProvider){
 		controller: 'homeController'
 	})
 
-	.when('/index.html', {
+	.when('home', {
 		templateUrl: 'views/home.html',
 		controller: 'homeController'
 	})
 
-	.when('/home/', {
+	.when('/home', {
 		templateUrl: 'views/home.html',
 		controller: 'homeController'
 	})
@@ -21,8 +21,5 @@ ecotypeCarwash.config(function($routeProvider){
 		controller: 'aboutController'
 	})
 
-	.when('/about/', {
-		templateUrl: 'views/about.html',
-		controller: 'aboutController'
-	})
+	$locationProvider.html5Mode(true);
 });
