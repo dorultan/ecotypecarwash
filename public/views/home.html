@@ -1,44 +1,107 @@
-<div class="header">
- <div class="container">
-  <div class="title-w">
-   <h1>We are the <span>EcoType Carwash </span> !</h1>
-   <p>Our waterless car wash is just as cool as it sounds like! And we’re mobile too, covering the whole LONDON area. </p>
-   <a href="/about">Learn more ...</a>
-  </div>
- </div>
-</div>
-<main class="main">
- <div class="container">
-  <div class="title-w">
+<header class="header">
+  <div class="container">
+   <div class="content">
+    <div class="title-w">
+     <h1><span>Eco</span>Type Carwash</h1>
+    </div>
+    <div class="content-w">
+     <p>Waterless, mobile hand carwash that offers premium services in valeting business and impeccable customer service in <span>London.</p>
+    </div>
+    <div class="buttons-w">
+     <a href="#pricing">Services</a>
+     <a href="/book">Book now</a>
+    </div>
    </div>
+  </div>
+</header>
+<section class="section1">
+ <div class="container">
+  <div class="row">
+    <div class="title-w">
+     <h1>Conceived around your needs.</h1>
+    </div>
+   <div class="col-md-6">
+    <div class="subtitle-w">
+     <h2>Green products for a green future.</h2>
+    </div>
+    <div class="content-w">
+     <p>We care about our planet and as a proof for that we are saving the water by using waterless and ECO friendly products without compromising the cleanliness and shine that your car should have at all time. </p>
+    </div>
+    <ul class="products">
+      <li><i class="fa fa-check-circle fa-2x"></i>Partially natural - latest technology is a real help in this area.</li>
+      <li><i class="fa fa-check-circle fa-2x"></i>NO hazardous – your car in safe hands.</li>
+      <li><i class="fa fa-check-circle fa-2x"></i>ECO friendly – waterless and PH balanced products.</li>
+      <li><i class="fa fa-check-circle fa-2x"></i>High quality – cleanliness, protection and shine.</li>
+    </ul>
+    <div class="buttons-w">
+     <a href="/about">
+        Learn more
+     </a>
+    </div>
+   </div>
+   <div class="col-md-6">
+    <div class="img-w">
+     <img src="images/logo/car-wash-utilities-2.svg">
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+<section class="section2">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-6">
+    <div class="img-w">
+     <img src="images/logo/map-2.svg">
+    </div>
+   </div>
+   <div class="col-md-6">
+    <div class="subtitle-w">
+     <h2>We are coming to you.</h2>
+    </div>
+    <div class="content-w">
+     <p>We know how precious time can be. It’s definitely easier to save money than it is to save time, but with EcoType you can save both! Our mobile team is ready to meet your expectations at NO extra cost. At home or at your place of work, your vehicle can receive the EcoType treatment no matter where you are in London</p>
+    </div>
+    <div class="buttons-w">
+     <a href="/about">Learn more</a>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+<section class="section3" id="pricing">
+ <div class="container">
+  <div class="title-w">
+    <h1>Choose the service that fits you.</h1>
+  </div>
+  <div class="row">
+   <div class="col-md-4" ng-repeat="packet in packets">
+    <div class="wrapper">
+     <div class="img-w">
+      <h2>{{packet.details.title}}</h2>
+      <img src="{{packet.imageUrl}}">
+      <img src="{{packet.icon}}">
+     </div>
+     <div class="content-w">
+      <ul>
+        <li ng-repeat="detail in packet.details"><span ng-if="detail.include === true" class="fa fa-check fa-1x"></span><span ng-if="detail.include === false" class="fa fa-times fa-1x"></span>{{detail.value}}</li>
+        <li>£{{packet.price}}</li>
+      </ul>
+     </div>
+      <div class="buttons-w">
+       <a href="#" ng-click="choose(packet.title)">Choose</a>
+      </div>    
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+<section class="section4">
+ <div class="container">
   <div class="content-w">
-    <div class="content">
-     <div class="subtitle-w">
-      <h3>Contact us by <span>21st of June 2017</span> and you'll benefit from <span>25% OFF</span> on your first booking!</h3>
-     </div>
-    </div>
-    <div class="row">
-     <div class="col-md-6 col-xs-12"> 
-      <div class="contact-w">
-       <h3>Contact details: </h3>
-       <ul>
-        <li><i class="fa fa-envelope fa-2x"></i> admin@ecotypecarwash.co.uk</li>
-        <li><i class="fa fa-mobile fa-3x"></i>+44-7432-572-365</li>
-       </ul>
-      </div>
-     </div>
-     <div class="col-md-6 col-xs-12">
-      <div class="contact-w">
-       <h3>Social media</h3>
-        <ul>
-          <li><a href="www.facebook.com"><i class="fa fa-facebook fa-2x"></i></a></li>
-        </ul>
-      </div>
-     </div>
-    </div>
-    <div class="last-words">
-     <p>EcoType Carwash – when your car becomes your joy.</p>
+    <div class="title-w">
+     <h1 id="cool">WE are ECO and FRIENDLY.</h1>
     </div>
   </div>
  </div>
-</main>
+</section>

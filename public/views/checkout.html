@@ -1,0 +1,71 @@
+<header class="book-header">
+ <div class="container">
+  <div class="title-w">
+   <h1>Can't be more simple ...</h1>
+  </div>
+ </div>
+</header>
+<section class="book-section">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-6">
+    <form name="appComplete" id="book-form" ng-submit="vm.appComplete()">
+     <div class="inp-w">
+      <p><i class="fa fa-user-o fa-2x"></i></p>
+      <input type="text" placeholder="Full name" name="name" ng-model="vm.clientDetails.name" required>
+     </div>
+     <div class="inp-w">
+   	  <p><i class="fa fa-envelope-o fa-2x" aria-hidden="true" ></i></p>
+   	  <input type="text" placeholder="Enter your email" ng-model="vm.clientDetails.email" required>
+   	 </div>
+     <div class="inp-w">
+   	  <p><i class="fa fa-mobile fa-3x" aria-hidden="true"></i></p>
+   	  <input type="text" placeholder="e.g: 074xxxxxxx" ng-model="vm.clientDetails.phone" required>
+   	 </div>
+     <div class="inp-w">
+   	  <p><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></p>
+   	  <input type="text" placeholder="Enter your address" ng-model="vm.clientDetails.address" required>
+   	 </div>
+     <div class="inp-w">
+      <p><i class="fa fa-calendar fa-2x" aria-hidden="true"></i></p>
+      <select class="select" required ng-model="vm.clientDetails.date.day">
+      <option ng-repeat="number in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ,24, 25, 26, 27, 28, 29, 30, 31]">{{number}}</option>
+      </select>
+      <select class="select" required ng-model="vm.clientDetails.date.month">
+       <option ng-repeat="number in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]">{{number}}</option>
+      </select>
+      <select class="select" required ng-model="vm.clientDetails.date.year">
+       <option ng-repeat="number in [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ,24, 25, 26, 27, 28, 29, 30, 31]">20{{number}}</option>
+      </select>
+    </div>
+   	 <div class="inp-w">
+   	  <p><i class="fa fa-address-o "></i></p>
+   	  <input type="text" placeholder="postcode" ng-model="vm.clientDetails.postcode" required>
+   	 </div>
+   	 <div class="inp-w">
+   	  
+   	  <textarea placeholder="write extra message" ng-model="vm.clientDetails.content.message">
+   	  
+   	  </textarea>
+   	 </div>
+   	 <div class="button-w">
+   	  <a href="" type="submit">Confirm <i class="fa fa-check"></i></a>
+   	 </div>
+    </form>
+   </div>
+   <div class="col-md-6">
+   	 <div class="wrapper">
+      <h2>You choose <span>{{vm.packet.title}}</span> <span class="{{vm.packet.icon}}"></span></h2>
+      <table class="table">
+        <tr ng-repeat="(key, value) in vm.packet.details">
+         <td ng-if="value.include === true"><p><b>{{key}}</b> - {{value.value}}</p></td>
+        </tr>
+      </table>
+      <div class="price-bar">
+       <p><span>Total price</span>: {{vm.packet.price}} £</p>
+      </div>
+     </div>
+   </div>
+  </div>
+ </div>
+</section>

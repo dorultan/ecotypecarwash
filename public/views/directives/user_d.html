@@ -1,0 +1,58 @@
+<div class="form-w">
+ <form class="form" ng-submit="vm.appComplete()">
+  <div class="inp-w">
+   <input type="text" name="full-name" placeholder="Full name" required ng-model="vm.clientDetails.name">
+  </div>
+  <div class="inp-w">
+   <input type="text" name="email" placeholder="Email address" required ng-model="vm.clientDetails.email">
+  </div>
+  <div class="inp-w">
+   <input type="text" name="phone-nr" placeholder="Phone number" required>
+  </div>
+  <div class="inp-w">
+   <input type="text" name="car-registration" placeholder="Vehicle registration number" required>
+  </div>
+  <div class="inp-w">
+   <input type="text" name="location-details" placeholder="Address" required ng-model="vm.clientDetails.locationDetails">
+  </div>
+
+  <div class="inp-w">
+   <input type="text" name="postcode" placeholder="Postcode" required ng-model="vm.clientDetails.postcode">
+  </div>
+  <div class="inp-w">
+    <p><i class="fa fa-calendar fa-2x"></i></p>
+  	<select class="select" required>
+     <option selected="selected">dd</option>
+  	 <option ng-repeat="number in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ,24, 25, 26, 27, 28, 29, 30, 31]" >{{number}}</option>
+  	</select>
+  	<select class="select" required>
+     <option selected="selected">mm</option>
+  	 <option ng-repeat="number in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]">{{number}}</option>
+  	</select>
+  	<select class="select" required>
+     <option selected="selected">yyyy</option>
+  	 <option ng-repeat="number in [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ,24, 25, 26, 27, 28, 29, 30, 31]">20{{number}}</option>
+  	</select>
+  </div>
+  <!-- <div class="inp-w">
+   <label for="hour">Time</label>
+   <input type="NUMBER" name="hour" min="01" max="12" required>
+   <label for="hour">:</label>
+   <input type="NUMBER" name="minute" min="5" step="5" max="60" required>
+   <div class="text-w">
+   	<p>Between</p>
+   </div>
+   <label for="hour">Time</label>
+   <input type="NUMBER" name="hour" min="01" step="001" max="12" required>
+   <label for="minute">:</label>
+   <input type="NUMBER" name="minute" min="00" step="5" max="60" required>
+  </div> -->
+  <div class="inp-w">
+   <textarea placeholder="Message ..."></textarea>
+  </div>
+  <div class="button-w">
+    <a href="#" ng-click="vm.next = false;">Back</a>
+    <input type="submit" name="submit" value="Submit">
+  </div>
+ </form>
+</div>
