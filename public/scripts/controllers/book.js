@@ -14,20 +14,21 @@ ecoType.controller('bookController', ['$scope', '$location', 'appService', '$htt
 	vm.clientDetails = {};
 	vm.next = false;
 	vm.complete = false;
+	
 	vm.appComplete = function(){
 			$http.post('/appComplete', {
 			email: vm.clientDetails.email,
-			subject: 'Client order ' + vm.packet.title,
+			subject: 'Client order ' + vm.checkedP,
 			content: {
 				name: vm.clientDetails.name,
 				address: vm.clientDetails.address,
 				postcode: vm.clientDetails.postcode,
 				mobile: vm.clientDetails.phone,
 				message: vm.clientDetails.message,
-				packet: vm.packet
+				title: vm.checkedP
 			}
 		})
-		console.log(vm.clientDetails);
+		console.log(vm.checkedP)
 		vm.complete = true;
 		vm.clientDetails = {};
 		
@@ -35,6 +36,5 @@ ecoType.controller('bookController', ['$scope', '$location', 'appService', '$htt
 
 	vm._next = function() {
 		vm.next = true;
-		console.log(vm.checkedP)
 	}
 }])

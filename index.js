@@ -40,11 +40,13 @@ app.post('/appComplete', function(req, res){
 	var fromEmail = new helper.Email(req.body.email);
 	var toEmail = new helper.Email('admin@ecotypecarwash.co.uk');
 	var subject = req.body.subject;
+	console.log(subject)
 	var content = new helper.Content('text/plain', 'Client name: ' + req.body.content.name + ' Client phone number: '
 																   + req.body.content.mobile + ', Client address: ' 
 																   + req.body.content.address + ', Postcode: ' 
 																   + req.body.content.postcode + ', Client packet: '
-																   + req.body.content.packet);
+																   + req.body.content.title);
+	console.log(req.subject);
 	var mail = new helper.Mail(fromEmail, subject, toEmail, content);
 	var request = sg.emptyRequest({
 	  method: 'POST',
