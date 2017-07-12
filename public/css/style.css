@@ -76,8 +76,9 @@ body {
 	height: 600px;
 	padding: 0;
 	margin: -20px 0 0 0;
-	background: url('../images/logo/header-banner-2.jpg') green;
+	background: url('../images/logo/bubbles.png') green;
 	background-position: center;
+	background-size: cover;
 	z-index: 0;
 }
 
@@ -111,14 +112,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
-/*.header .container .content .title-w h1 span {
-	text-shadow: 0px 2px 0px green;
-	color: #58BB46;
-	padding: 10px;
-	border-radius: 50%;
-	background: #fff;
-}*/
 
 .header .container .content .content-w p {
 	max-width: 520px;
