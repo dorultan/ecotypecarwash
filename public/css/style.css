@@ -78,7 +78,6 @@ body {
 	margin: -20px 0 0 0;
 	background: url('../images/logo/header-banner.jpg') green;
 	background-position: center;
-	background-size: cover;
 	z-index: 0;
 }
 
