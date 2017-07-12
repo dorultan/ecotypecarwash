@@ -76,7 +76,7 @@ body {
 	height: 600px;
 	padding: 0;
 	margin: -20px 0 0 0;
-	background: url('../images/logo/bubbles.png') green;
+	background: url('../images/logo/header-banner.jpg') green;
 	background-position: center;
 	background-size: cover;
 	z-index: 0;
@@ -107,7 +107,7 @@ body {
 	padding: 5px;
 	border-radius: 1%;
 	font-weight: bold;
-	font-size: 48px;
+	font-size: 60px;
     font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -124,10 +124,9 @@ body {
 
 .header .container .content .content-w {
 	padding: 10px 0px 20px 0px;
-	text-align: center;
+	text-align: center;/*
 	border-radius: 0px 60px 0px 60px;
-	background: rgba(14, 135, 41, 0.9);
-	box-shadow: 0 0 1px 0 green;
+	background: rgba(14, 135, 41, 0.9);*/
 }
 
 .header .container .content .buttons-w {
