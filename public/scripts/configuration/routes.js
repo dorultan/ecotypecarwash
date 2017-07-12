@@ -3,7 +3,10 @@ ecoType.config(function($routeProvider, $locationProvider){
 
    .when('/', {
    	templateUrl: 'views/home.html',
-   	controller: 'homeController'
+   	controller: 'homeController',
+      data: {
+         title: 'Ecotype carwash'
+      }
    })
 
    .when('/book', {

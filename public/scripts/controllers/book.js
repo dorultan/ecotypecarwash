@@ -31,7 +31,6 @@ ecoType.controller('bookController', ['$scope', '$location', 'appService', '$htt
 		console.log(vm.checkedP)
 		vm.complete = true;
 		vm.clientDetails = {};
-		
 	}
 
 	vm._next = function() {
