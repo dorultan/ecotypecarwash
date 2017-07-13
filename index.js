@@ -40,12 +40,12 @@ app.post('/appComplete', function(req, res){
 	var fromEmail = new helper.Email(req.body.email);
 	var toEmail = new helper.Email('admin@ecotypecarwash.co.uk');
 	var subject = req.body.subject;
-	console.log(subject)
 	var content = new helper.Content('text/plain', 'Client name: ' + req.body.content.name + ' Client phone number: '
 																   + req.body.content.mobile + ', Client address: ' 
 																   + req.body.content.address + ', Postcode: ' 
-																   + req.body.content.postcode + ', Client packet: '
-																   + req.body.content.title);
+																   + req.body.content.postcode + ', Client service order: '
+																   + req.body.content.title +', client registration number: '
+																   + req.body.reg_nr + ',  Order date(dd/mm/yyyy): ' + req.body.month + '-' + req.body.day + '-' + req.body.year + '.');
 	console.log(req.subject);
 	var mail = new helper.Mail(fromEmail, subject, toEmail, content);
 	var request = sg.emptyRequest({

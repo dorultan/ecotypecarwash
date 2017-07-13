@@ -9,13 +9,11 @@ ecoType.controller('contactController', ['$scope', '$http', '$location', functio
 			subject: vm.emailDetails.subject,
 			message: vm.emailDetails.message
 		})
-		console.log(vm.emailDetails.subject)
 		vm.subj = vm.emailDetails.subject;
 		vm.sent = true;
 
 		vm.emailDetails.email = ' ';
 		vm.emailDetails.subject = ' ';
 		vm.emailDetails.message = ' ';
-		console.log('something');
 	}
 }])

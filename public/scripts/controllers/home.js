@@ -6,11 +6,5 @@ ecoType.controller('homeController', ['$scope', '$log', '$location', 'appService
 		$routeParams.num = id;
 		$location.path(id);
 	}
-	var date = new Date();
-
-	console.log(date.getDay());
-	console.log(date.getMonth());
-	console.log(date.getYear())
-
 }])
 	

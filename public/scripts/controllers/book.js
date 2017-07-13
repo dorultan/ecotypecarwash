@@ -25,10 +25,13 @@ ecoType.controller('bookController', ['$scope', '$location', 'appService', '$htt
 				postcode: vm.clientDetails.postcode,
 				mobile: vm.clientDetails.phone,
 				message: vm.clientDetails.message,
-				title: vm.checkedP
+				reg_nr: vm.clientDetails.registration_nr,
+				title: vm.checkedP,
+				day: vm.clientDetails.date_day,
+				month: vm.clientDetails.date_month,
+				year: vm.clientDetails.date_year
 			}
 		})
-		console.log(vm.checkedP)
 		vm.complete = true;
 		vm.clientDetails = {};
 	}
