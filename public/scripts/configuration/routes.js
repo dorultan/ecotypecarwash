@@ -5,7 +5,8 @@ ecoType.config(function($routeProvider, $locationProvider){
    	templateUrl: 'views/home.html',
    	controller: 'homeController',
       data: {
-         title: 'Ecotype carwash'
+         title: 'Ecotype carwash',
+         description: 'Ecotype is a manual carwash company wich use only eco products to acomplish'
       }
    })
 
