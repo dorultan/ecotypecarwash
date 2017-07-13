@@ -96,20 +96,34 @@
 /*iphone 5 and 5s*/
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-    .section1 .container .row {
-      margin: 0 auto;
-      padding: 0;
+  .header {
+    background: url('../images/logo/mobile-banner-home.jpg');
+    background-position: bottom;
+    height: 300px;
+  }
+
+  .header .container .content {
+    top: 40px;
+  }
+
+  .header .container .content .buttons-w a {
+    font-size: 17px;
+  }
+
+  .section1 .container .row {
+    margin: 0 auto;
+    padding: 0;
   }
 
   .header .container .content .title-w h1,
   .section1 .container .row .title-w h1,
   .section3 .container .title-w h1,
   .section4 .container .content-w .title-w h1 {
-    font-size: 35px;
+    font-size: 33px;
   }
 
   .header .container .content .content-w p {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .section1 .container .row .subtitle-w h2,
@@ -117,6 +131,11 @@
     font-size: 24px;
   }
 
+  .section1 .container .row .buttons-w a,
+  .section2 .container .row .buttons-w a {
+    font-size: 16px;
+  }
+
   .section1 .container .row .content-w p,
   .section2 .container .row .content-w p {
     font-size: 16px;
@@ -125,38 +144,143 @@
   .section1 .container .row .products li {
     font-size: 16px;
   }
+  /*book*/
+
+  .header-book {
+    background-size: contain;
+    height: 245px;
+  }
+
+  .book-section .container .row .subtitle-w h2 {
+    font-size: 25px;
+  }
+
+  .book-section .container .row .subtitle-w {
+    text-align: center;
+  }
+
+  .header-book .container .title-w h1 {
+    font-size: 36px;
+  }
+
+  .book-section .container .row .inp-w {
+    padding: 0;
+  }
+
+  /*about*/
+
+  .header-about {
+    background-size: cover;
+    height: 200px;
+  }
+
+  .header-about .container .title-w {
+    top: -40px;
+    text-align: center;
+  }
+
+  .header-about .container .title-w h1 {
+    font-size: 35px;
+  }
+
+  .about-section .container .s_w .title-w h2 {
+    font-size: 25px;
+  }
+
 }
 
 /*iphone 6 and 6s*/
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) { 
-     .section1 .container .row {
-      margin: 0 auto;
-      padding: 0;
+   .header {
+    background: url('../images/logo/mobile-banner-home.jpg');
+    background-position: bottom;
+    height: 300px;
+  }
+
+  .header .container .content {
+    top: 40px;
+  }
+
+  .header .container .content .buttons-w a {
+    font-size: 17px;
+  }
+
+  .section1 .container .row {
+    margin: 0 auto;
+    padding: 0;
   }
 
   .header .container .content .title-w h1,
   .section1 .container .row .title-w h1,
   .section3 .container .title-w h1,
   .section4 .container .content-w .title-w h1 {
-    font-size: 36px;
+    font-size: 33px;
   }
 
   .header .container .content .content-w p {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .section1 .container .row .subtitle-w h2,
   .section2 .container .row .subtitle-w h2 {
-    font-size: 26px;
+    font-size: 24px;
+  }
+
+  .section1 .container .row .buttons-w a,
+  .section2 .container .row .buttons-w a {
+    font-size: 16px;
   }
 
   .section1 .container .row .content-w p,
   .section2 .container .row .content-w p {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .section1 .container .row .products li {
     font-size: 16px;
   }
+  /*book*/
+
+  .header-book {
+    background-size: contain;
+    height: 245px;
+  }
+
+  .book-section .container .row .subtitle-w h2 {
+    font-size: 25px;
+  }
+
+  .book-section .container .row .subtitle-w {
+    text-align: center;
+  }
+
+  .header-book .container .title-w h1 {
+    font-size: 36px;
+  }
+
+  .book-section .container .row .inp-w {
+    padding: 0;
+  }
+
+  /*about*/
+
+  .header-about {
+    background-size: cover;
+    height: 200px;
+  }
+
+  .header-about .container .title-w {
+    top: -40px;
+    text-align: center;
+  }
+
+  .header-about .container .title-w h1 {
+    font-size: 35px;
+  }
+
+  .about-section .container .s_w .title-w h2 {
+    font-size: 25px;
+  }
+
 }
