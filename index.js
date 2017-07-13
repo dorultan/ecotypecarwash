@@ -45,7 +45,7 @@ app.post('/appComplete', function(req, res){
 																   + req.body.content.address + ', Postcode: ' 
 																   + req.body.content.postcode + ', Client service order: '
 																   + req.body.content.title +', client registration number: '
-																   + req.body.reg_nr + ',  Order date(dd/mm/yyyy): ' + req.body.month + '-' + req.body.day + '-' + req.body.year + '.');
+																   + req.body.content.reg_nr + ',  Order date(dd/mm/yyyy): ' + req.body.content.month + '-' + req.body.content.day + '-' + req.body.content.year + '.');
 	console.log(req.subject);
 	var mail = new helper.Mail(fromEmail, subject, toEmail, content);
 	var request = sg.emptyRequest({
