@@ -49,7 +49,7 @@ ecoType
       controllerAs: 'vm',
       meta: {
          title: 'Ecotype carwash',
-         titleSuffix: '| Contact-us',
+         titleSuffix: ' | Contact-us',
          description: 'We are very easy to reach. Either you choose to get in touch with us via email, website or phone, our response will always be professional due to our impeccable customer service.'
       }
    })
