@@ -1,1 +1,1 @@
-var ecoType = angular.module('ecoType', [ 'ngRoute', 'ngMessages', 'ngAnimate']);
+var ecoType = angular.module('ecoType', [ 'ngRoute', 'ngMessages', 'ngAnimate', 'ngMeta']);

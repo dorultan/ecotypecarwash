@@ -76,9 +76,11 @@ body {
 	height: 600px;
 	padding: 0;
 	margin: -20px 0 0 0;
-	background: url('../images/logo/header-banner.jpg') green;
+	background: url('../images/logo/header-banner.jpg') #5EBD45;
 	background-position: center;
-	z-index: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .header .container .content {
