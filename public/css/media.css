@@ -7,6 +7,20 @@
     height: 300px;
   }
 
+  .header-contact {
+    background: url('../images/logo/contact-us-banner-mobile.jpg');
+    background-size: cover;
+    height: 245px;
+    background-position: center;
+  }
+
+  .header-about {
+    background: url('../images/logo/about-us-banner-mobile.jpg');
+    background-size: cover;
+    height: 245px;
+    background-position: center;
+  }
+
   .header .container .content {
     top: 40px;
   }
@@ -56,6 +70,11 @@
     height: 245px;
   }
 
+  .header-about {
+    background-size: cover;
+    height: 245px;
+  }
+
   .book-section .container .row .subtitle-w h2 {
     font-size: 25px;
   }
@@ -73,11 +92,6 @@
   }
 
   /*about*/
-
-  .header-about {
-    background-size: cover;
-    height: 200px;
-  }
 
   .header-about .container .title-w {
     top: -40px;
@@ -102,6 +116,21 @@
     height: 300px;
   }
 
+
+  .header-contact {
+    background: url('../images/logo/contact-us-banner-mobile.jpg');
+    background-size: cover;
+    height: 245px;
+    background-position: center;
+  }
+
+  .header-about {
+    background: url('../images/logo/about-us-banner-mobile.jpg');
+    background-size: cover;
+    height: 245px;
+    background-position: center;
+  }
+
   .header .container .content {
     top: 40px;
   }
@@ -168,11 +197,6 @@
   }
 
   /*about*/
-
-  .header-about {
-    background-size: cover;
-    height: 200px;
-  }
 
   .header-about .container .title-w {
     top: -40px;
@@ -198,6 +222,20 @@
     height: 300px;
   }
 
+  .header-contact {
+    background: url('../images/logo/contact-us-banner-mobile.jpg');
+    background-size: cover;
+    height: 245px;
+    background-position: center;
+  }
+
+  .header-about {
+    background: url('../images/logo/about-us-banner-mobile.jpg');
+    background-size: cover;
+    height: 245px;
+    background-position: center;
+  }
+
   .header .container .content {
     top: 40px;
   }
@@ -264,12 +302,6 @@
   }
 
   /*about*/
-
-  .header-about {
-    background-size: cover;
-    height: 200px;
-  }
-
   .header-about .container .title-w {
     top: -40px;
     text-align: center;
