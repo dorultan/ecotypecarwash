@@ -1,95 +1,26 @@
 <!DOCTYPE html>
-<html ng-app="ecoType">
+<html>
 <head>
-	<title ng-bind="ngMeta.title"></title>
+	<title>Ecotypecarwash</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta property="og:type" content="{{ngMeta['og:type']}}" />
-  <meta property="og:locale" content="{{ngMeta['og:locale']}}" />
-  <meta name="keywords" content="{{ngMeta.keywords}}">
-  <meta name="author" content="{{ngMeta['author']}}" />
-  <meta name="description" ng-bind="ngMeta.description">
-  <meta property="og:image" content="https://s3.eu-west-3.amazonaws.com/ecotypecarwash/link-share.png">
-  <meta property="og:title" content="EcoType Carwash - Mobile detailing in London">
-  <meta property="og:locale" content="en_GB" />
-  <meta property="og:url" content="http://ecotypecarwash.co.uk">
-  <meta property="og:site_name" content="Ecotypecarwash">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/media.css">
   <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/font-awesome-4.7.0/fonts/FontAwesome">
 </head>
 <body>
-<nav class="navbar">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="fa fa-bars fa-2x"></span>
-      </button>
-      <a class="navbar-brand" href="/home"><img src="images/logo/ecotypecarwash.png"></a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/home" class="active">Home</a></li>
-        <li><a href="/book">Bookings</a></li>
-        <li><a href="/about">About us</a></li>
-        <li><a href="/contact">Contact us</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-->
-</nav>
-<div ng-view="">
-
-</div>
-<footer class="footer">
-  <div class="container">
-   <div class="row">
-    <div class="col-md-5 col-sm-5 col-xs-5">
-     <ul>
-       <li><a href="/home">Home</a></li>
-       <li><a href="/about">About Us</a></li>
-       <li><a href="/book">Bookings</a></li>
-       <li><a href="/contact">Contact Us</a></li>
-     </ul>
-    </div>
-    <div class="col-md-2 col-sm-2 col-xs-2">
-    </div>
-    <div class="col-md-5 col-sm-5 col-xs-5">
-     <div class="social">
-      <p>Find us on: <a href="https://www.facebook.com/EcoTypeCarWash/"><i class="fa fa-facebook-square fa-2x"></i></a></p>
-     </div>
-    </div>
-   </div>
-   <div class="copyright">  
-     <p>©Copyright Dorultan Ianos all rights reserved</p></div>
-  </div>
-</footer>
-<script src="https://code.angularjs.org/1.6.4/angular.min.js"></script>
-<script src="https://code.angularjs.org/1.6.4/angular-route.js"></script>
-<script src="https://code.angularjs.org/1.6.4/angular-messages.js"></script>
-<script src="https://code.angularjs.org/1.6.4/angular-animate.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ng-meta/0.3.9/ngMeta.min.js"></script>
-<script type="text/javascript" src="scripts/configuration/api.js"></script>
-<script src="scripts/configuration/appService.js"></script>
-
-<script src="scripts/controllers/checkout.js"></script>
-<script src="scripts/directives/choosePacket.js"></script>
-<script src="scripts/directives/user_d.js"></script>
-<script src="scripts/controllers/home.js"></script>
-<script src="scripts/controllers/book.js"></script>
-<script src="scripts/controllers/about.js"></script>
-<script src="scripts/controllers/contact.js"></script>
-<script src="scripts/configuration/routes.js"></script>
-
-
-<script
-  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-  crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<main class="main">
+ <div class="logo-w">
+  <img src="../images/logo/ecotypecarwash.png">
+ </div>
+ <div class="title-w">
+  <h1>Thank you for visiting our website!</h1>
+ </div>
+ <div class="content-w">
+  <p>Every single member of the EcoType team is working hard at the moment to update our services & price list for you! 
+Great updates and changes will be at your finger tips shortly.</p>
+  <p><i class="fa fa-info"></i>For <span>bookings</span> and <span>enquiries</span> you can still contact us on:</p>
+  <p><span>+44 7432 572 365</span> or <span>admin@ecotypecarwash.co.uk</span></p>
+ </div>
+</main>
 </body>
 </html>
