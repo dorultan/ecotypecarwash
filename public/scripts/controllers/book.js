@@ -10,11 +10,11 @@ ecoType.controller('bookController', ['$scope', '$location', 'appService', '$htt
 		return p;
 	}
 	vm.price;
-	vm._packet = vm.packet();
+	vm._packet = vm.packet(); 
 	vm.clientDetails = {};
 	vm.next = false;
 	vm.complete = false;
-	
+
 	vm.appComplete = function(){
 			$http.post('/appComplete', {
 			email: vm.clientDetails.email,
